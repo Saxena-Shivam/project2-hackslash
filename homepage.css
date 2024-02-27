@@ -31,17 +31,37 @@ nav a:hover {
 }
 body{
   /* background-image: url("images/bg.webp"); */
-  background-color:  #11999e;
+  /* background-color:  #11999e; */
   margin: 0px;
 }
+h1{
+  padding: 20px 20px;
+  font-family: "Open Sans", sans-serif;
+  margin: 0px;
+
+}
+h3{
+  font-size: 1.4rem;
+  padding: 20px 20px;
+  line-height: 1.4;
+  margin: 0px;
+  text-decoration:none;
+  text-align: left;
+  font-weight:lighter;
+}
 .map{
-  left 0px;;
+  padding-left: 20px;
   width: 80%;
   display: inline-block;
   padding-top:  20px
 }
  th, td {
   border: 1px solid black;
+}
+tr th{
+    color: #fff;
+    background-color: #195c9f;
+    border-color: #195c9f
 }
 .names{
   position: absolute;
@@ -53,11 +73,21 @@ body{
 tr{
   background-color: white;
 }
-td{
+td,th{
   padding: 7.5px 40px;
   text-align: center;
   text-decoration: none;
   font-family: sans-serif;
+  background-color: #A5DD9B;
+}
+td a{
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.2rem;
+
+}
+td a:hover{
+  color: #555;
 }
 #contact {
     background-color: #333;
@@ -80,7 +110,7 @@ td{
 img {vertical-align: middle;}
 .myimage{
   width: 100%;
-  height: 40rem;
+  height: 35rem;
 }
 /* Slideshow container */
 .slideshow-container {
@@ -118,13 +148,14 @@ img {vertical-align: middle;}
 
 /* Caption text */
 .text {
-  color: #f2f2f2;
-  font-size: 15px;
+  color: #000000;
+  font-size: 25px;
   padding: 8px 12px;
   position: absolute;
   bottom: 8px;
   width: 100%;
   text-align: center;
+  font-weight: bold;
 }
 
 /* Number text (1/3 etc) */
