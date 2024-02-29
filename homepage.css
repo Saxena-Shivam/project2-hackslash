@@ -30,8 +30,7 @@ nav a:hover {
   display: inline;
 }
 body{
-  /* background-image: url("images/bg.webp"); */
-  /* background-color:  #11999e; */
+  background-color:  #11999e;
   margin: 0px;
 }
 h1{
@@ -51,43 +50,42 @@ h3{
 }
 .map{
   padding-left: 20px;
-  width: 80%;
+  width: 800px;
   display: inline-block;
   padding-top:  20px
 }
- th, td {
-  border: 1px solid black;
-}
-tr th{
-    color: #fff;
-    background-color: #195c9f;
-    border-color: #195c9f
-}
-.names{
+.lists{
+  height: 888px;
   position: absolute;
   display: inline;
-  border-width: 5px;
-  border-color: black;
-  padding: 20px  50px 6px  50px;
+  margin : 20px 20px  100px 20px;
+  background-color: #fff;
 }
-tr{
-  background-color: white;
-}
-td,th{
-  padding: 7.5px 40px;
-  text-align: center;
-  text-decoration: none;
-  font-family: sans-serif;
-  background-color: #A5DD9B;
-}
-td a{
-  color: #fff;
+.lists a{
+  color: black;
   text-decoration: none;
   font-size: 1.2rem;
+  line-height: 1.2rem;
 
 }
-td a:hover{
-  color: #555;
+li{
+  font-size: 1.2rem;
+  line-height: 2rem;
+}
+.lists a:hover{
+  text-decoration: underline;
+  color: blue;
+  cursor: poi
+  
+}
+ .info td,th{
+  padding: 20px 65px;
+  font-family: "Ubuntu";
+  text-align: left;
+}
+.info{
+  width: 100%;
+  background-color: #7F888F;
 }
 #contact {
     background-color: #333;
@@ -103,6 +101,10 @@ td a:hover{
   width: 150px;
   margin-left: 20px;
   background-color: white;
+
+}
+.bottom-container{
+
 }
 * {box-sizing: border-box}
 
@@ -198,3 +200,138 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
 }
+
+
+hr{
+  background: black;
+  border-style: none;
+  border-top: solid;
+  border-color:gray;
+  border-width: 10px;
+  width: 100%;
+  margin: 0px auto 0px auto;
+  }
+
+.footer-image{
+  margin: 20px;
+  background-color: white;
+}
+
+
+.main_container {
+    /* border: 2px solid black; */
+    width: 100%;
+    display: grid;
+    padding: 50px 20px;
+    /* justify-content: center;
+    align-items: center; */
+    gap: 1.5rem;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+}
+
+
+.card_container {
+    border: 2px solid orange;
+    display: flex;
+    flex-direction: column;
+    border-radius: 7px;
+    overflow: hidden;
+    gap: 1.2rem;
+    background-color: white;
+    /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
+}
+
+.card_container:hover .card_image {
+    transform: scale(1.2);
+    transition: all 2s ease-out 1s;
+
+}
+
+.image_container {
+    position: relative;
+    overflow: hidden;
+    height: 9rem;
+
+}
+
+.card_image {
+    object-fit: cover;
+    object-position: center;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+}
+
+.card_title_container {
+    /* border: 2px solid green; */
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    padding: 0 1.2rem;
+}
+
+.card_title_anchor {
+    /* margin: auto; */
+}
+
+.card_title_anchor:hover .card_title {
+    color: red;
+}
+
+
+
+/* @media (max-width:1100px) {
+    .main_container {
+        grid-template-columns: repeat(3, 1fr);
+
+    }
+} */
+/* @media (max-width:880px) {
+    .main_container {
+        grid-template-columns: repeat(2, 1fr);
+
+    }
+} */
+/* @media (max-width:650px) {
+    .main_container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+} */
+
+/* .card_footer {
+    border: 2px solid red;
+    display: flex;
+    justify-content: space-between;
+} */
+
+/* .card_author {
+    border: 1px solid pink;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+} */
+
+/* .author_avatar {
+    height: 2.5rem;
+    width: 2.5rem;
+    overflow: hidden;
+    border: 1px solid rgb(55, 49, 49);
+    border-radius: 90%;
+    background-color: rgb(187, 174, 174);
+} */
+
+/* .tag_container {
+    display: flex;
+    align-items: center;
+
+} */
+
+/* .tag_container span {
+    border: 1px solid black;
+} */
