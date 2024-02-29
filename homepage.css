@@ -1,5 +1,5 @@
 header {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.6);
 
     color: #fff;
     padding: 15px;
@@ -30,7 +30,7 @@ nav a:hover {
   display: inline;
 }
 body{
-  background-color:  #11999e;
+  background-color:  #EEEDEB;
   margin: 0px;
 }
 h1{
@@ -52,21 +52,22 @@ h3{
   padding-left: 20px;
   width: 800px;
   display: inline-block;
-  padding-top:  20px
+  padding-top:  20px;
+  padding-bottom: 20px;
 }
 .lists{
   height: 888px;
   position: absolute;
   display: inline;
   margin : 20px 20px  100px 20px;
-  background-color: #fff;
+  background-color: #FFE6E6;
+    padding-bottom: 20px;
 }
 .lists a{
   color: black;
   text-decoration: none;
   font-size: 1.2rem;
   line-height: 1.2rem;
-
 }
 li{
   font-size: 1.2rem;
@@ -76,7 +77,7 @@ li{
   text-decoration: underline;
   color: blue;
   cursor: poi
-  
+
 }
  .info td,th{
   padding: 20px 65px;
@@ -87,29 +88,21 @@ li{
   width: 100%;
   background-color: #7F888F;
 }
-#contact {
-    background-color: #333;
-    color: white;
-    padding: 15px;
-    text-align: center;
-}
-#contact a{
-  color: #fff;
-  text-decoration: none;
-}
+
 .logofooter{
   width: 150px;
   margin-left: 20px;
   background-color: white;
-
 }
-.bottom-container{
 
-}
 * {box-sizing: border-box}
 
-.mySlides {display: none}
-img {vertical-align: middle;}
+.mySlides {
+  display: none
+}
+img {
+  vertical-align: middle;
+}
 .myimage{
   width: 100%;
   height: 35rem;
@@ -119,6 +112,7 @@ img {vertical-align: middle;}
   max-width: 1000px;
   position: relative;
   margin: auto;
+  margin-top: 20px;
 }
 
 /* Next & previous buttons */
@@ -203,10 +197,9 @@ img {vertical-align: middle;}
 
 
 hr{
-  background: black;
   border-style: none;
   border-top: solid;
-  border-color:gray;
+  border-color:white;
   border-width: 10px;
   width: 100%;
   margin: 0px auto 0px auto;
@@ -214,17 +207,17 @@ hr{
 
 .footer-image{
   margin: 20px;
-  background-color: white;
-}
+  /* background-color: white; */
 
+}
 
 .main_container {
     /* border: 2px solid black; */
     width: 100%;
     display: grid;
     padding: 50px 20px;
-    /* justify-content: center;
-    align-items: center; */
+    justify-content: center;
+    align-items: center;
     gap: 1.5rem;
     grid-template-columns: repeat(5, 1fr);
     margin: auto;
@@ -238,7 +231,7 @@ hr{
     border-radius: 7px;
     overflow: hidden;
     gap: 1.2rem;
-    background-color: white;
+    background-color: #37B5B6;
     /* box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset; */
 }
 
@@ -264,7 +257,10 @@ hr{
     border-top-right-radius: 4px;
     border-top-left-radius: 4px;
 }
+.card_desc{
+  font-family: cursive;
 
+}
 .card_title_container {
     /* border: 2px solid green; */
     display: flex;
@@ -274,13 +270,24 @@ hr{
 }
 
 .card_title_anchor {
-    /* margin: auto; */
+    margin: auto;
 }
 
 .card_title_anchor:hover .card_title {
     color: red;
 }
-
+#contact {
+    background-color: #333;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+#contact img{
+  width: 40px;
+  height: 40px;
+  radius: 0px;
+  border-radius: 0px;
+}
 
 
 /* @media (max-width:1100px) {
